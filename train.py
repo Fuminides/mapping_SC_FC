@@ -4,7 +4,7 @@ from network import *
 import numpy as np
 import tensorflow as tf
 import scipy.stats
-
+import scipy.io
 
 # Training Parameters
 epochs = 20000
