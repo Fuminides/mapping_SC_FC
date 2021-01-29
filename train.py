@@ -74,6 +74,8 @@ with tf.Session(config=tf.ConfigProto(allow_soft_placement=True, log_device_plac
         input_data = scipy.io.loadmat(data_path)['sc']
         output_data = scipy.io.loadmat(data_path)['fc']
 
+        #Affinities here
+
         # Train
         for iters in range(0, np.shape(input_data)[0], batch_size):
             batch_out = output_data[iters:iters + batch_size, :]
